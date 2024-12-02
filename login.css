@@ -1,0 +1,57 @@
+/* Ribbon Styling */
+.ribbon {
+    position: absolute;         /* Makes the ribbon float */
+    top: 10px;                  /* Adjusts vertical position */
+    left: 50%;                  /* Centers it horizontally */
+    transform: translateX(-50%); /* Keeps it centered */
+    width: 250px;               /* Adjust width */
+    padding: 10px 15px;
+    background: purple;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+/* Centered Section */
+.centered {
+    display: flex;              /* Enables flexbox */
+    flex-direction: column;     /* Aligns items in a vertical column */
+    justify-content: center;    /* Vertically centers the items */
+    align-items: center;        /* Horizontally centers the items */
+    height: 400px;              /* Height of the centered container */
+    width: 400px;
+    margin: auto;               /* Centers the form on the page */
+    padding: 20px;              /* Adds padding inside the container */
+    border: 1px solid #ccc;
+    border-radius: 10px;        /* Optional: Rounded corners */
+    background: #f9f9f9;        /* Light background for contrast */
+}
+
+/* Input Field Styling */
+.centered input[type="text"],
+.centered input[type="password"] {
+    margin: 10px 0;             /* Adds space between inputs */
+    padding: 8px;               /* Makes input fields easier to use */
+    border: 1px solid #ccc;     /* Adds a subtle border */
+    border-radius: 5px;         /* Rounded corners */
+    width: 80%;                 /* Adjusts input width */
+}
+
+/* Submit Button Styling */
+.centered input[type="submit"] {
+    margin: 10px 5px;           /* Adds space between buttons */
+    padding: 8px 15px;
+    background: purple;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;            /* Adds hover effect */
+}
+
+.centered input[type="submit"]:hover {
+    background: purple;     /* Darker color on hover */
+}
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homePage</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="ribbon">
+        <span>Relational Database of CVE records with CVSS scores to evaluate cyber risks of popular Relational Database Management Systems</span>
+    </div>
+
+    <div class="content">
+        <div class="query_box">
+            <h2>QUERY BOX</h2>
+
+            <label for="dropdown">Select a table:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="" disabled selected>Choose</option>
+                <option value="products">Products</option>
+                <option value="cve_record">CVE Record</option>
+                <option value="both">Both</option>
+            </select>
+
+            <label for="order">Order by:</label>
+            <select id="order" name="order_by">
+                <option value="" disabled selected>Choose</option>
+                <option>CVSS score</option>
+                <option>Date</option>
+                <option>CVSS version</option>
+                <option>RDBMS version</option>
+            </select>
+
+            <button id="ascending">Ascending</button>
+            <button id="descending">Descending</button>
+            <button id="fetch">Fetch</button>
+            <button id="reset">Reset</button>
+        </div>
+
+        <div class="description">
+            <span>
+                <b>Description:</b> This relational database is made to house reliable records detailing the database security of well-known relational database management systems. The database will feature objective criteria and evaluations for several popular RDBMS (Relational Database Management System) and their different versions. These universally accepted criteria will include CVE (Common Vulnerability and Exposure) and CVSS (Common Vulnerability Severity Score) records. The intended purpose of this tool is to help individuals, whether pursuing personal work or representing a company, make informed decisions about which RDBMS they wish to utilize. Given that security is a major deciding factor.
+            </span>
+        </div>
+    </div>
+</body>
+</html>
